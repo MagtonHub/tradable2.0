@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "capital.markets",
+      "sha256_cert_fingerprints": [
+        "22:D0:13:CB:19:F1:89:0C:8C:AA:F7:17:C3:08:2A:38:45:DB:09:2B:D0:C2:B5:18:69:A4:24:1F:D4:E7:50:A7"
+      ]
+    }
+  }
+]

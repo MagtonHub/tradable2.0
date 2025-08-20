@@ -1,0 +1,32 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "NZDJ4925L4.capital.markets"
+        ],
+        "components": [
+          {
+            "/": "*",
+            "comment": "Matches any URLs"
+          }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "NZDJ4925L4.capital.markets"
+    ]
+  },
+  "activitycontinuation": {
+    "apps": [
+      "NZDJ4925L4.capital.markets"
+    ]
+  },
+  "appclips": {
+    "apps": [
+      "NZDJ4925L4.capital.markets"
+    ]
+  }
+}

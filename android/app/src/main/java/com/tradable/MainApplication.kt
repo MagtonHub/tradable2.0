@@ -1,4 +1,4 @@
-package com.tradable
+package capital.markets
 
 import android.app.Application
 import com.facebook.react.PackageList

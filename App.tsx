@@ -1,45 +1,20 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+import { TamaguiProvider, createTamagui, Button } from 'tamagui'
+import { config } from './tamagui.config.ts'
 
-import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
-import {
-  SafeAreaProvider,
-  useSafeAreaInsets,
-} from 'react-native-safe-area-context';
+type Conf = typeof config
 
-function App() {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  return (
-    <SafeAreaProvider>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <AppContent />
-    </SafeAreaProvider>
-  );
+// make imports typed
+declare module '@tamagui/core' {
+  interface TamaguiCustomConfig extends Conf {}
 }
 
-function AppContent() {
-  const safeAreaInsets = useSafeAreaInsets();
-
+export default () => {
   return (
-    <View style={styles.container}>
-      <NewAppScreen
-        templateFileName="App.tsx"
-        safeAreaInsets={safeAreaInsets}
-      />
-    </View>
-  );
+    <TamaguiProvider config={config} defaultTheme="dark">
+      <Button theme="warning">Hello world</Button>
+      <Button theme="error">Hello world</Button>
+      <Button theme="success">Hello world</Button>
+      <Button theme="accent">Hello world</Button>
+    </TamaguiProvider>
+  )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
-
-export default App;
